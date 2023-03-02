@@ -59,7 +59,7 @@ alias ~='cd ~'
 alias gitu='git add . && git commit && git push'
 
 # Powerlevel10k config
-export _THEME=~/repos/dotdotdots/powerlevel10k/powerlevel10k.zsh-theme
+export _THEME=~/repos/dotdotdots/submodules/powerlevel10k/powerlevel10k.zsh-theme
 [[ -f $_THEME ]] && . $_THEME
 
 export NVM_DIR="$HOME/.nvm"
