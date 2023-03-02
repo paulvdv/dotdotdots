@@ -1,3 +1,6 @@
 [submodule "alacritty/themes/alacritty"]
 	path = alacritty/themes/alacritty
 	url = git@github.com:catppuccin/alacritty.git
+[submodule "powerlevel10k"]
+	path = powerlevel10k
+	url = https://github.com/romkatv/powerlevel10k.git
