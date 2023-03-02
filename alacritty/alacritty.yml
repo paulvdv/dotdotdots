@@ -1,7 +1,7 @@
 import:
   - themes/alacritty/catppuccin/catppuccin-mocha.yml
-env:
-  TERM: alacritty
+# env:
+#   TERM: alacritty
 window:
   decorations: full
 class:
