@@ -59,11 +59,16 @@ alias ~='cd ~'
 alias gitu='git add . && git commit && git push'
 
 # Powerlevel10k config
-export _THEME=powerlevel10k/powerlevel10k.zsh-theme
+export _THEME=~/repos/dotdotdots/powerlevel10k/powerlevel10k.zsh-theme
 [[ -f $_THEME ]] && . $_THEME
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$HOME/.poetry/bin:$PATH"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
 
 # Fix Home,End and Del keys
 bindkey "^[[H" beginning-of-line
@@ -72,7 +77,3 @@ bindkey "^[[P" delete-char
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-eval "$(pyenv init -)"
-
-export PATH="$HOME/.poetry/bin:$PATH"
