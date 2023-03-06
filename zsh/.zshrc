@@ -66,7 +66,9 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 export PATH=$PATH:"/home/paul/.local/share/applications"
-export ANDROID_HOME="/home/paul/Android/Sdk"
+
+export ANDROID_HOME="$HOME/Android/Sdk"
+
 export PATH=$PATH:$ANDROID_HOME"/emulator"
 export PATH=$PATH:$ANDROID_HOME"/tools"
 export PATH=$PATH:$ANDROID_HOME"/build-tools"
@@ -75,12 +77,12 @@ export PATH=$PATH:$ANDROID_HOME"/platform-tools"
 
 export PATH=$PATH:"$HOME/.yarn/bin"
 export PATH="$HOME/.poetry/bin:$PATH"
-export PATH="$PYENV_ROOT/bin:$PATH"
 
 export PATH=/usr/local/opt/ruby/bin:$PATH
 export PATH=/usr/local/lib/ruby/gems/2.7.0/bin:$PATH
 
 export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init --path)"
 
 # export _JAVA_AWT_WM_NONREPARENTING=1
