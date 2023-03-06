@@ -84,6 +84,8 @@ export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init --path)"
 
+source "/etc/profile.d/rvm.sh"
+
 # export _JAVA_AWT_WM_NONREPARENTING=1
 # export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
 # export RUBY_GEMS="/home/paul/.gem/ruby/2.7.0/gems"
