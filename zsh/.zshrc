@@ -65,10 +65,26 @@ export _THEME=~/repos/dotdotdots/submodules/powerlevel10k/powerlevel10k.zsh-them
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
+export PATH=$PATH:"/home/paul/.local/share/applications"
+export ANDROID_HOME="/home/paul/Android/Sdk"
+export PATH=$PATH:$ANDROID_HOME"/emulator"
+export PATH=$PATH:$ANDROID_HOME"/tools"
+export PATH=$PATH:$ANDROID_HOME"/build-tools"
+export PATH=$PATH:$ANDROID_HOME"/tools/bin"
+export PATH=$PATH:$ANDROID_HOME"/platform-tools"
+export PATH=$PATH:"/home/paul/.yarn/bin"
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$HOME/.poetry/bin:$PATH"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init --path)"
+
+# export _JAVA_AWT_WM_NONREPARENTING=1
+# export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
+# export RUBY_GEMS="/home/paul/.gem/ruby/2.7.0/gems"
+# export PATH=$PATH:"/home/paul/.gem/ruby/2.7.0/bin"
+# export PATH=$PATH:"$HOME/.cargo/env"
+# export GOPATH="$HOME/go"
+# export PATH=$PATH:"$GOPATH/bin"
 
 # Fix Home,End and Del keys
 bindkey "^[[H" beginning-of-line
