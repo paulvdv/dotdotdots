@@ -65,10 +65,9 @@ export _THEME=~/repos/dotdotdots/submodules/powerlevel10k/powerlevel10k.zsh-them
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
-export PATH=$PATH:"/home/paul/.local/share/applications"
+export PATH=$PATH:"$HOME/.local/share/applications"
 
 export ANDROID_HOME="$HOME/Android/Sdk"
-
 export PATH=$PATH:$ANDROID_HOME"/emulator"
 export PATH=$PATH:$ANDROID_HOME"/tools"
 export PATH=$PATH:$ANDROID_HOME"/build-tools"
