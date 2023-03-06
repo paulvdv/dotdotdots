@@ -72,10 +72,15 @@ export PATH=$PATH:$ANDROID_HOME"/tools"
 export PATH=$PATH:$ANDROID_HOME"/build-tools"
 export PATH=$PATH:$ANDROID_HOME"/tools/bin"
 export PATH=$PATH:$ANDROID_HOME"/platform-tools"
-export PATH=$PATH:"/home/paul/.yarn/bin"
-export PYENV_ROOT="$HOME/.pyenv"
+
+export PATH=$PATH:"$HOME/.yarn/bin"
 export PATH="$HOME/.poetry/bin:$PATH"
 export PATH="$PYENV_ROOT/bin:$PATH"
+
+export PATH=/usr/local/opt/ruby/bin:$PATH
+export PATH=/usr/local/lib/ruby/gems/2.7.0/bin:$PATH
+
+export PYENV_ROOT="$HOME/.pyenv"
 eval "$(pyenv init --path)"
 
 # export _JAVA_AWT_WM_NONREPARENTING=1
